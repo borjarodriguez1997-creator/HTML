@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+</head>
+<body>
+    <form action="procesareserva.php"
+    method="get">
+    <h1>Haga su reserva</h1>
+    <fieldset>
+        <legend> Datos Personales</legend>
+        <p>
+            <label for="nombre"> Nombre: </label>
+            <input type="text" name="Nombre" required maxlength="100" id="nombre" autofocus>
+        </p>
+        <p>
+            <label for="Apellidos">Apellidos:</label>        
+            <input type="text" name="Apellidos" required maxlength="100" id="Apellidos">
+        </p> 
+        <p>
+            <label for="DNI">DNI:</label>
+            <input type="text" id="DNI" name="DNI" maxlength="10" placeholder="DNI con letra" required>
+        </p>       
+    </fieldset>
+    <fieldset>
+        <legend>Datos de su estancia</legend>        
+        <p>
+            <label for="Ind"> Individual</label>
+            <input type="radio" name="Habitación" id="Ind" value="Ind" checked> 
+            <label for="Doble"> Doble</label>
+            <input type="radio" name="Habitación" id="Doble" value="Doble" > 
+            <label for="Triple"> Triple</label>
+            <input type="radio" name="Habitación" id="Triple" value="Triple"> 
+        </p>
+        <p>
+            <label for="Num"> Número de personas</label>
+            <select name="Num" id="Num">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </p>
+        <p>
+           <label for="Llevo mascotas">Llevo mascotas:</label> 
+           <input type="checkbox" name="Mascotas" id="Llevo mascotas">
+        </p>
+        <p>
+            <label for="Date"> Fecha de llegada</label>
+            <input type="date" name="Fecha" id="Date">
+        </p>
+        <p>
+            <label for="Time"> Hora de llegada</label>
+            <input type="time" name="Hora" id="Time">
+        </p>
+        
+        
+    </fieldset>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Reiniciar">
+    <p>
+    <a href="index.html.html">Volver</a>
+    </p>
+</form>
+</body>
+</html>
